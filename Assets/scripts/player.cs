@@ -22,8 +22,7 @@ public class player : MonoBehaviour {
 
 	void FixedUpdate() {
 		if (Input.GetKeyDown("space")) {
-			rb.velocity = new Vector3(rb.velocity.x, 0, 0);
-			rb.AddForce(new Vector3(0, jump_force, 0));
+			jump();
 		}
 
 
@@ -39,5 +38,10 @@ public class player : MonoBehaviour {
 		controller.on_player_die(this);
 
 		Destroy(gameObject);
+	}
+
+	public void jump() {
+		rb.velocity = new Vector3(rb.velocity.x, 0, 0);
+		rb.AddForce(new Vector3(0, jump_force, 0));
 	}
 }
