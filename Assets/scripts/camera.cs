@@ -6,6 +6,8 @@ public class camera : MonoBehaviour {
 	public player p;
 
 	void Update() {
-		transform.position = new Vector3(p.GetComponent<Transform>().position.x, transform.position.y, transform.position.z);
+		if (p != null) {
+			transform.position = new Vector3(p.GetComponent<Transform>().position.x, transform.position.y, transform.position.z);
+		}
 	}
 }

@@ -13,7 +13,7 @@ public class level : MonoBehaviour {
 	}
 
 	public void on_new_pipe_needed() {
-		float hole_pos = Random.Range(-3, 3);
+		float hole_pos = Random.Range(-5, 5);
 
 		var ps = pipe.GetComponent<Transform>().localScale;
 
@@ -38,5 +38,13 @@ public class level : MonoBehaviour {
 			Destroy(c);
 			pipes.Remove(c);
 		}
+	}
+
+	public void on_restart() {
+		foreach (var c in pipes) {
+			Destroy(c);
+		}
+
+		pipes.Clear();
 	}
 }

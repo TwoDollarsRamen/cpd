@@ -10,6 +10,8 @@ public class player : MonoBehaviour {
 	public float jump_force = 300;
 	public level l;
 
+	public gamecontroller controller;
+
 	float timer = 0.0f;
 
 	void Start() {
@@ -31,5 +33,11 @@ public class player : MonoBehaviour {
 			l.on_new_pipe_needed();
 			timer = 0.0f;
 		}
+	}
+
+	void OnCollisionEnter(Collision c) {
+		controller.on_player_die(this);
+
+		Destroy(gameObject);
 	}
 }
