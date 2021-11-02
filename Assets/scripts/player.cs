@@ -25,7 +25,6 @@ public class player : MonoBehaviour {
 			jump();
 		}
 
-
 		/* The timer makes sure the pipes aren't spawned continously. */
 		timer += Time.deltaTime;
 		if (transform.position.x > 10 && (int)transform.position.x % 10 == 0 && timer > 0.3f) {
@@ -41,6 +40,8 @@ public class player : MonoBehaviour {
 	}
 
 	public void jump() {
+		GetComponent<AudioSource>().Play();
+
 		rb.velocity = new Vector3(rb.velocity.x, 0, 0);
 		rb.AddForce(new Vector3(0, jump_force, 0));
 	}
