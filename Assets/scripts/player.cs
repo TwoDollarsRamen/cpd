@@ -20,11 +20,13 @@ public class player : MonoBehaviour {
 		rb.AddForce(new Vector3(speed, 0, 0));
 	}
 
-	void FixedUpdate() {
+	void Update() {
 		if (Input.GetKeyDown("space")) {
 			jump();
 		}
+	}
 
+	void FixedUpdate() {
 		/* The timer makes sure the pipes aren't spawned continously. */
 		timer += Time.deltaTime;
 		if (transform.position.x > 10 && (int)transform.position.x % 10 == 0 && timer > 0.3f) {
@@ -42,7 +44,10 @@ public class player : MonoBehaviour {
 	public void jump() {
 		GetComponent<AudioSource>().Play();
 
+		/* Cancel exisiting movement to make the movement
+		 * more predictable.*/
 		rb.velocity = new Vector3(rb.velocity.x, 0, 0);
+
 		rb.AddForce(new Vector3(0, jump_force, 0));
 	}
 }
