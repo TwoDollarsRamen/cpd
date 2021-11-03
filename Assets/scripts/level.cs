@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class level : MonoBehaviour {
 	public GameObject pipe;
 	public player p;
 
+	public TMP_Text score_text;
+
+	public int score = 0;
+
 	List<GameObject> pipes = new List<GameObject>();
 
 	void Start() {
+	}
 
+	public void Update() {
+		score_text.text = score.ToString();
 	}
 
 	public void on_new_pipe_needed() {
+		score++;
+
 		float hole_pos = Random.Range(-5, 5);
 
 		var ps = pipe.GetComponent<Transform>().localScale;
@@ -41,6 +51,8 @@ public class level : MonoBehaviour {
 	}
 
 	public void on_restart() {
+		score = 0;
+
 		foreach (var c in pipes) {
 			Destroy(c);
 		}
