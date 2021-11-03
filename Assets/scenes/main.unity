@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 687760543}
   - component: {fileID: 687760542}
   - component: {fileID: 687760545}
+  - component: {fileID: 687760546}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -523,6 +524,18 @@ MonoBehaviour:
   high_score_text: {fileID: 2057334213}
   cam: {fileID: 963194229}
   l: {fileID: 184955462}
+--- !u!114 &687760546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687760541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee8bb42ae90ad3788726040ba0d1f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1754,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1965609474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 687760546}
+        m_TargetAssemblyTypeName: menucontroller, Assembly-CSharp
+        m_MethodName: load_scene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: scenes/menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1965609474
 MonoBehaviour:
   m_ObjectHideFlags: 0
