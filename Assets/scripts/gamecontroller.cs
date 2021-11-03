@@ -30,7 +30,7 @@ public class gamecontroller : MonoBehaviour {
 		mobile_input_screen.SetActive(false);
 #endif
 
-		var po = Instantiate(player_prefab);
+		var po = Instantiate(player_prefab, Vector3.zero, Quaternion.identity);
 		var p = po.GetComponent<player>();
 		p.controller = this;
 		p.l = l;
