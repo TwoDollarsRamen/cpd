@@ -28,12 +28,12 @@ public class level : MonoBehaviour {
 		var ps = pipe.GetComponent<Transform>().localScale;
 
 		/* Upper pipe */
-		var new_pipe = Instantiate(pipe, new Vector3(p.transform.position.x + 10, ((ps.y / 2.0f) + 2.0f) + hole_pos, 0), Quaternion.identity);
+		var new_pipe = Instantiate(pipe, new Vector3(p.transform.position.x + 15, ((ps.y / 2.0f) + 2.0f) + hole_pos, 0), Quaternion.identity);
 
 		pipes.Add(new_pipe);
 
 		/* Lower pipe */
-		new_pipe = Instantiate(pipe, new Vector3(p.transform.position.x + 10, -((ps.y / 2.0f) + 2.0f) + hole_pos, 0), Quaternion.identity);
+		new_pipe = Instantiate(pipe, new Vector3(p.transform.position.x + 15, -((ps.y / 2.0f) + 2.0f) + hole_pos, 0), Quaternion.identity);
 
 		pipes.Add(new_pipe);
 
