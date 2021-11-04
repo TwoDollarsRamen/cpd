@@ -1,6 +1,8 @@
 # Flappy Sphere
 Cross Platform Development project
 
+Git repo: https://github.com/TwoDollarsRamen/cpd
+
 ## Building & Running
 Open project in Unity and open the "menu" scene. Since this project is designed to
 run in a portrait view, setting the correct resolution in the editor is required.
