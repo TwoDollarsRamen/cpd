@@ -1,4 +1,18 @@
- == Feedback ==
+ == Feedback & Playtesting ==
 
- This file contains the outcome of the presentation and playtesting
- session that I ran.
+This file contains the outcome of the presentation and playtesting
+session that I ran.
+
+At first, the game didn't run at all, due to a strange bug where the
+player was not appearing in the build. The problem was that the player
+was spawning in and falling down before everything else had loaded.
+I patched this by simply adding a main menu that loads before the main
+scene.
+
+After that, playtesting went fine. There was a bug where sometimes the
+space bar wouldn't get registered. It was solved by running the code to
+check the state of the space bar in the "Update" function instead of the
+"FixedUpdate" function.
+
+The feedback from my presentation was that everything worked perfectly
+once the previously explained bugs had been fixed.
