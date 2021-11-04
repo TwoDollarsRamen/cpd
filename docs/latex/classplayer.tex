@@ -1,0 +1,68 @@
+\hypertarget{classplayer}{}\doxysection{player Class Reference}
+\label{classplayer}\index{player@{player}}
+Inheritance diagram for player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplayer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classplayer_aaef771e411319dcf441f03d318737141}{jump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classplayer_afda80debb72be6cd1e6d9f05f1d2b94d}{speed}} = 350
+\item 
+float \mbox{\hyperlink{classplayer_ab1f9b6e017cf7326c5dd466e5b77d0ea}{jump\+\_\+force}} = 300
+\item 
+\mbox{\hyperlink{classlevel}{level}} \mbox{\hyperlink{classplayer_ae6cf88a8f3f8588c05ebea788abe88fe}{l}}
+\item 
+\mbox{\hyperlink{classgamecontroller}{gamecontroller}} \mbox{\hyperlink{classplayer_a7ead498d555d7114cd13f3d76c07213e}{controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Responsible for controlling the player. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayer_aaef771e411319dcf441f03d318737141}\label{classplayer_aaef771e411319dcf441f03d318737141}} 
+\index{player@{player}!jump@{jump}}
+\index{jump@{jump}!player@{player}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void player.\+jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cancel any existing movement and add an upwards force accoring to the \char`\"{}speed\char`\"{} member. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplayer_a7ead498d555d7114cd13f3d76c07213e}\label{classplayer_a7ead498d555d7114cd13f3d76c07213e}} 
+\index{player@{player}!controller@{controller}}
+\index{controller@{controller}!player@{player}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgamecontroller}{gamecontroller}} player.\+controller}
+
+A reference to the game controller script in the scene. \mbox{\Hypertarget{classplayer_ab1f9b6e017cf7326c5dd466e5b77d0ea}\label{classplayer_ab1f9b6e017cf7326c5dd466e5b77d0ea}} 
+\index{player@{player}!jump\_force@{jump\_force}}
+\index{jump\_force@{jump\_force}!player@{player}}
+\doxysubsubsection{\texorpdfstring{jump\_force}{jump\_force}}
+{\footnotesize\ttfamily float player.\+jump\+\_\+force = 300}
+
+The upwards force to add to the player every time the jump button is pressed \mbox{\Hypertarget{classplayer_ae6cf88a8f3f8588c05ebea788abe88fe}\label{classplayer_ae6cf88a8f3f8588c05ebea788abe88fe}} 
+\index{player@{player}!l@{l}}
+\index{l@{l}!player@{player}}
+\doxysubsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlevel}{level}} player.\+l}
+
+A reference to the level \mbox{\Hypertarget{classplayer_afda80debb72be6cd1e6d9f05f1d2b94d}\label{classplayer_afda80debb72be6cd1e6d9f05f1d2b94d}} 
+\index{player@{player}!speed@{speed}}
+\index{speed@{speed}!player@{player}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float player.\+speed = 350}
+
+The sideways force to add to the player on start. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/scripts/player.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{classlevel}{}\doxysection{level Class Reference}
+\label{classlevel}\index{level@{level}}
+Inheritance diagram for level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlevel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlevel_a1647931e1211facd829dff61a5db5227}{on\+\_\+new\+\_\+pipe\+\_\+needed}} ()
+\item 
+void \mbox{\hyperlink{classlevel_a92e9a28f45aa2ca7f598e301315470d8}{on\+\_\+restart}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{classlevel_ac1578cd95d42a3fc7e117206ca53c56e}{pipe}}
+\item 
+\mbox{\hyperlink{classplayer}{player}} \mbox{\hyperlink{classlevel_adeb37d2222cedd8fc158d34554ec780b}{p}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{classlevel_a25d2398ca9dc471f160ec91514f31360}{score\+\_\+text}}
+\item 
+int \mbox{\hyperlink{classlevel_ab2389a00377cdda1c6402a29061b4849}{score}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Responsible for managing the level, including generation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlevel_a1647931e1211facd829dff61a5db5227}\label{classlevel_a1647931e1211facd829dff61a5db5227}} 
+\index{level@{level}!on\_new\_pipe\_needed@{on\_new\_pipe\_needed}}
+\index{on\_new\_pipe\_needed@{on\_new\_pipe\_needed}!level@{level}}
+\doxysubsubsection{\texorpdfstring{on\_new\_pipe\_needed()}{on\_new\_pipe\_needed()}}
+{\footnotesize\ttfamily void level.\+on\+\_\+new\+\_\+pipe\+\_\+needed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+To be called every time the player moves 10 units. Instantiates a new pipe and destroys any pipes that the player has already passed. \mbox{\Hypertarget{classlevel_a92e9a28f45aa2ca7f598e301315470d8}\label{classlevel_a92e9a28f45aa2ca7f598e301315470d8}} 
+\index{level@{level}!on\_restart@{on\_restart}}
+\index{on\_restart@{on\_restart}!level@{level}}
+\doxysubsubsection{\texorpdfstring{on\_restart()}{on\_restart()}}
+{\footnotesize\ttfamily void level.\+on\+\_\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets up the level for a new game 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlevel_adeb37d2222cedd8fc158d34554ec780b}\label{classlevel_adeb37d2222cedd8fc158d34554ec780b}} 
+\index{level@{level}!p@{p}}
+\index{p@{p}!level@{level}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplayer}{player}} level.\+p}
+
+A reference to the player \mbox{\Hypertarget{classlevel_ac1578cd95d42a3fc7e117206ca53c56e}\label{classlevel_ac1578cd95d42a3fc7e117206ca53c56e}} 
+\index{level@{level}!pipe@{pipe}}
+\index{pipe@{pipe}!level@{level}}
+\doxysubsubsection{\texorpdfstring{pipe}{pipe}}
+{\footnotesize\ttfamily Game\+Object level.\+pipe}
+
+The pipe prefab with which to generate the level. \mbox{\Hypertarget{classlevel_ab2389a00377cdda1c6402a29061b4849}\label{classlevel_ab2389a00377cdda1c6402a29061b4849}} 
+\index{level@{level}!score@{score}}
+\index{score@{score}!level@{level}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int level.\+score = 0}
+
+The score. Incremented whenever a new pipe is created. \mbox{\Hypertarget{classlevel_a25d2398ca9dc471f160ec91514f31360}\label{classlevel_a25d2398ca9dc471f160ec91514f31360}} 
+\index{level@{level}!score\_text@{score\_text}}
+\index{score\_text@{score\_text}!level@{level}}
+\doxysubsubsection{\texorpdfstring{score\_text}{score\_text}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text level.\+score\+\_\+text}
+
+A reference to the text where to display the score. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/scripts/level.\+cs\end{DoxyCompactItemize}

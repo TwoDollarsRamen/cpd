@@ -3,23 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/**
+ * Responsible for managing the level, including generation.
+ */
 public class level : MonoBehaviour {
-	public GameObject pipe;
-	public player p;
+	public GameObject pipe;           /**< The pipe prefab with which to generate the level. */
+	public player p;                  /**< A reference to the player */
 
-	public TMP_Text score_text;
+	public TMP_Text score_text;       /**< A reference to the text where to display the score. */
 
-	public int score = 0;
+	public int score = 0;             /**< The score. Incremented whenever a new pipe is created. */
 
 	List<GameObject> pipes = new List<GameObject>();
 
 	void Start() {
 	}
 
-	public void Update() {
+	void Update() {
 		score_text.text = score.ToString();
 	}
 
+	/**
+	 * To be called every time the player moves 10 units. Instantiates a new pipe and
+	 * destroys any pipes that the player has already passed.
+	 */
 	public void on_new_pipe_needed() {
 		score++;
 
@@ -50,6 +57,9 @@ public class level : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * Sets up the level for a new game
+	 */
 	public void on_restart() {
 		score = 0;
 

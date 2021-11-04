@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Responsible for controlling the player.
+ */
 [RequireComponent(typeof(Rigidbody))]
 public class player : MonoBehaviour {
 	Rigidbody rb;
 
-	public float speed = 350;
-	public float jump_force = 300;
-	public level l;
+	public float speed = 350;           /**< The sideways force to add to the player on start. */
+	public float jump_force = 300;      /**< The upwards force to add to the player every time the jump button is pressed */
+	public level l;                     /**< A reference to the level */
 
-	public gamecontroller controller;
+	public gamecontroller controller;   /**< A reference to the game controller script in the scene. */
 
 	float timer = 0.0f;
 
@@ -41,6 +44,9 @@ public class player : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
+	/**
+	 * Cancel any existing movement and add an upwards force accoring to the "speed" member.
+	 */
 	public void jump() {
 		GetComponent<AudioSource>().Play();
 

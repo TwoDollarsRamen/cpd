@@ -1,0 +1,102 @@
+\hypertarget{classgamecontroller}{}\doxysection{gamecontroller Class Reference}
+\label{classgamecontroller}\index{gamecontroller@{gamecontroller}}
+Inheritance diagram for gamecontroller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgamecontroller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgamecontroller_a56325df714fa1320cc00bc4136459ec6}{on\+\_\+restart}} ()
+\item 
+void \mbox{\hyperlink{classgamecontroller_afcfa63a007124ff040b127111b50464c}{on\+\_\+player\+\_\+die}} (\mbox{\hyperlink{classplayer}{player}} p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{classgamecontroller_ac591dad9ce55251429080652b8741ae1}{game\+\_\+over\+\_\+screen}}
+\item 
+Game\+Object \mbox{\hyperlink{classgamecontroller_a7a7202c5b9b7b1d0fe10f66eb1d6d7a3}{mobile\+\_\+input\+\_\+screen}}
+\item 
+Button \mbox{\hyperlink{classgamecontroller_a1f36417590a2b2a0063c14843a3b6df4}{jump\+\_\+button}}
+\item 
+Game\+Object \mbox{\hyperlink{classgamecontroller_ab37717663e1b6c67522f5a97045afdaa}{player\+\_\+prefab}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{classgamecontroller_aacf73906cda84875c34b3dd8e6e5e6ed}{high\+\_\+score\+\_\+text}}
+\item 
+\mbox{\hyperlink{classcamera}{camera}} \mbox{\hyperlink{classgamecontroller_add3adc1f5008a3626d81b3971b8f5ae4}{cam}}
+\item 
+\mbox{\hyperlink{classlevel}{level}} \mbox{\hyperlink{classgamecontroller_ae164bb914b777e044dbbbfc37eb3c6ff}{l}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls all of the main game logic, including managing player deaths and restarting the game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgamecontroller_afcfa63a007124ff040b127111b50464c}\label{classgamecontroller_afcfa63a007124ff040b127111b50464c}} 
+\index{gamecontroller@{gamecontroller}!on\_player\_die@{on\_player\_die}}
+\index{on\_player\_die@{on\_player\_die}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{on\_player\_die()}{on\_player\_die()}}
+{\footnotesize\ttfamily void gamecontroller.\+on\+\_\+player\+\_\+die (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classplayer}{player}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+To be called when the player dies. Sets the high score if necessary and shows the game over screen. \mbox{\Hypertarget{classgamecontroller_a56325df714fa1320cc00bc4136459ec6}\label{classgamecontroller_a56325df714fa1320cc00bc4136459ec6}} 
+\index{gamecontroller@{gamecontroller}!on\_restart@{on\_restart}}
+\index{on\_restart@{on\_restart}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{on\_restart()}{on\_restart()}}
+{\footnotesize\ttfamily void gamecontroller.\+on\+\_\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+To be called by the \char`\"{}\+Restart\char`\"{} button on the game over screen.
+
+Resets the game for another round. This is cleaner than simply reloading the scene. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classgamecontroller_add3adc1f5008a3626d81b3971b8f5ae4}\label{classgamecontroller_add3adc1f5008a3626d81b3971b8f5ae4}} 
+\index{gamecontroller@{gamecontroller}!cam@{cam}}
+\index{cam@{cam}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{cam}{cam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcamera}{camera}} gamecontroller.\+cam}
+
+A reference to the camera \mbox{\Hypertarget{classgamecontroller_ac591dad9ce55251429080652b8741ae1}\label{classgamecontroller_ac591dad9ce55251429080652b8741ae1}} 
+\index{gamecontroller@{gamecontroller}!game\_over\_screen@{game\_over\_screen}}
+\index{game\_over\_screen@{game\_over\_screen}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{game\_over\_screen}{game\_over\_screen}}
+{\footnotesize\ttfamily Game\+Object gamecontroller.\+game\+\_\+over\+\_\+screen}
+
+A reference to the game over screen UI canvas. \mbox{\Hypertarget{classgamecontroller_aacf73906cda84875c34b3dd8e6e5e6ed}\label{classgamecontroller_aacf73906cda84875c34b3dd8e6e5e6ed}} 
+\index{gamecontroller@{gamecontroller}!high\_score\_text@{high\_score\_text}}
+\index{high\_score\_text@{high\_score\_text}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{high\_score\_text}{high\_score\_text}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text gamecontroller.\+high\+\_\+score\+\_\+text}
+
+A reference to the text object containing the high score on the game over screen \mbox{\Hypertarget{classgamecontroller_a1f36417590a2b2a0063c14843a3b6df4}\label{classgamecontroller_a1f36417590a2b2a0063c14843a3b6df4}} 
+\index{gamecontroller@{gamecontroller}!jump\_button@{jump\_button}}
+\index{jump\_button@{jump\_button}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{jump\_button}{jump\_button}}
+{\footnotesize\ttfamily Button gamecontroller.\+jump\+\_\+button}
+
+A reference to the UI button for mobile input. \mbox{\Hypertarget{classgamecontroller_ae164bb914b777e044dbbbfc37eb3c6ff}\label{classgamecontroller_ae164bb914b777e044dbbbfc37eb3c6ff}} 
+\index{gamecontroller@{gamecontroller}!l@{l}}
+\index{l@{l}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlevel}{level}} gamecontroller.\+l}
+
+A reference to the level \mbox{\Hypertarget{classgamecontroller_a7a7202c5b9b7b1d0fe10f66eb1d6d7a3}\label{classgamecontroller_a7a7202c5b9b7b1d0fe10f66eb1d6d7a3}} 
+\index{gamecontroller@{gamecontroller}!mobile\_input\_screen@{mobile\_input\_screen}}
+\index{mobile\_input\_screen@{mobile\_input\_screen}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{mobile\_input\_screen}{mobile\_input\_screen}}
+{\footnotesize\ttfamily Game\+Object gamecontroller.\+mobile\+\_\+input\+\_\+screen}
+
+A reference to the UI canvas that contains the mobile input. \mbox{\Hypertarget{classgamecontroller_ab37717663e1b6c67522f5a97045afdaa}\label{classgamecontroller_ab37717663e1b6c67522f5a97045afdaa}} 
+\index{gamecontroller@{gamecontroller}!player\_prefab@{player\_prefab}}
+\index{player\_prefab@{player\_prefab}!gamecontroller@{gamecontroller}}
+\doxysubsubsection{\texorpdfstring{player\_prefab}{player\_prefab}}
+{\footnotesize\ttfamily Game\+Object gamecontroller.\+player\+\_\+prefab}
+
+The player prefab to be instantiated. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/scripts/gamecontroller.\+cs\end{DoxyCompactItemize}
